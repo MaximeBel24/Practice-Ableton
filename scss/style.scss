@@ -1,0 +1,42 @@
+@use 'reset' as *;
+@use 'base' as *;
+@use 'utils' as *;
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.3rem 3rem;
+    border-bottom: 3px solid var(--background);
+    nav{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        ul {
+            display: flex;
+            gap: 30px;
+            a{
+                font-size: 1.25rem;
+                font-weight: 500;
+            }
+            .active {
+                color: var(--light_red);
+            }
+        }
+    }
+    div {
+        display: flex;
+        gap: 30px;
+        a {
+            font-weight: 500;
+            &:first-child {
+                color: blue;
+                font-size: 1.25rem;
+            }
+        }
+    }
+}
+
+main {
+    height: 1200px;
+}
